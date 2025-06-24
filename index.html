@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="simulador unach preuniversitario San Marcos Riobamba">
+    <meta name="keywords" content="simulador, unach, ingreso, universidad, practic">
+    <meta name="author" content="Jovanna Rojas Malave">
+    <title>PREUNIVERSITARIO SAN MARCOS RIOBAMBA</title>
+    <link rel="icon" href="favicon.ico">
+    <!--
+    Autor: Jovanna Rojas Malave
+    GitHub: https://github.com/jovarojas
+    LinkedIn: https://www.linkedin.com/in/jovanna-rojas-651574257/ -->
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 20px;
+            font-size: 150%;
+        }
+
+        footer,
+        h2 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        h2 {
+            line-height: 200px;
+            background-color: #00345d;
+            color: white;
+            margin: 0;
+        }
+
+
+        [alt*="fija"] {
+            border-radius: 50%;
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+            max-height: 100px;
+            width: auto;
+        }
+
+        footer {
+            background-color: lightgray;
+            border: #00345d groove 2px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        header img {
+            float: left;
+        }
+
+        li.principal {
+            position: relative;
+            display: inline-block;
+            padding: 20px;
+            margin: 0 80px;
+            background-image: linear-gradient(sienna, lightgray, sienna);
+            border-radius: 10px;
+        }
+
+        li.principal>a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        li.principal>a:hover {
+            color: blue;
+        }
+
+        li.principal>ul {
+            position: absolute;
+            left: 50%;
+            top: 40px;
+            z-index: 2;
+            list-style-type: none;
+            width: 100px;
+            text-align: center;
+            margin-left: -50px;
+            font-family: Verdana;
+            font-size: 0.7em;
+            height: 0px;
+            overflow: hidden;
+            transition: linear 0.4s;
+        }
+
+        li.principal:hover>ul {
+            height: 300px;
+        }
+
+        li.secundario:first-child {
+            border-radius: 5px 5px 0 0;
+            margin-top: 5px;
+            position: relative;
+        }
+
+        li.secundario:first-child::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -10px;
+            height: 1px;
+            width: 1px;
+            border: solid transparent 5px;
+            border-bottom-color: #313131;
+            margin-left: -5px;
+        }
+
+        li.secundario:nth-child(even) {
+            background-color: #313131;
+        }
+
+        li.secundario:nth-child(odd) {
+            background-color: #404040;
+        }
+
+        li.secundario:last-child {
+            border-radius: 0 0 5px 5px;
+        }
+
+        li.secundario:hover {
+            background-color: #4d4d4d;
+        }
+
+        li.secundario a {
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        li.secundario a:active {
+            background-image: repeating-linear-gradient(30deg, #404040, #4d4d4d, #404040 50%);
+        }
+
+        /* Adaptación para pantallas moviles */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 120%;
+                margin: 10px;
+            }
+
+            h2 {
+                font-size: 20px;
+                line-height: normal;
+                padding: 10px;
+            }
+
+            header img {
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/logo.png" alt="imagen fija">
+    <div id="contenidoTest">
+        <header>
+            <img src="images/logo.png" alt="logo del preuniversitario">
+            <h2>PREUNIVERSITARIO SAN MARCOS</h2>
+        </header>
+        <nav>
+            <ul>
+                <li class="principal">
+                    <a href="#">Simuladores UNACH</a>
+                    <ul>
+                        <li class="secundario"><a href="https://preuniversitariosanmarcossimulador01.netlify.app/">Simulador 1</a></li>
+                        <li class="secundario"><a href="https://preuniversitariosanmarcossimulador02.netlify.app/">Simulador 2</a></li>
+                        <li class="secundario"><a href="https://preuniversitariosanmarcossimulador03.netlify.app/">Simulador 3</a></li>
+                        <li class="secundario"><a href="https://preusanmarcosminisimulador01.netlify.app/">Mini simulador</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </div>
+    <footer>García Moreno y Véloz esquina, Riobamba, Ecuador</footer>
+</body>
+
+</html>
