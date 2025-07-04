@@ -141,25 +141,65 @@
             background-image: repeating-linear-gradient(30deg, #404040, #4d4d4d, #404040 50%);
         }
 
-        /* Adaptación para pantallas moviles */
-        @media screen and (max-width: 768px) {
-            body {
-                font-size: 120%;
-                margin: 10px;
-            }
+        /* Adaptación para pantallas móviles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 120%;
+        margin: 10px;
+    }
 
-            h2 {
-                font-size: 20px;
-                line-height: normal;
-                padding: 10px;
-            }
+    h2 {
+        font-size: 1.2em;
+        line-height: normal;
+        padding: 20px 10px;
+        text-align: center;
+    }
 
-            header img {
-                float: none;
-                display: block;
-                margin: 0 auto;
-            }
-        }
+    header img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    li.principal {
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    li.principal > ul {
+        position: static;
+        width: 100%;
+        margin: 0;
+        height: auto;
+        transition: none;
+    }
+
+    li.principal:hover > ul {
+        height: auto;
+    }
+
+    li.secundario a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    [alt*="fija"] {
+        position: static;
+        display: block;
+        margin: 20px auto;
+        max-width: 80px;
+        height: auto;
+    }
+}
     </style>
 </head>
 
